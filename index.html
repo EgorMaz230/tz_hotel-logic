@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Система готелю</h1>
+    <div class="container">
+    <!-- Пошук інформації про гостя -->
+    <label for="guestName">Ім'я гостя: (Англійською)</label>
+    <input type="text" id="guestName">
+    <button onclick="searchGuest()">Пошук</button>
+    
+    <!-- Вивід інформації про гостя -->
+    <div id="guestInfo"></div>
+    
+    <hr>
+    
+    <!-- Форма бронювання -->
+    <h2>Бронювання</h2>
+    <label for="startDate">Дата заїзду:</label>
+    <input type="date" id="startDate">
+    <label for="endDate">Дата виїзду:</label>
+    <input type="date" id="endDate">
+    <button onclick="reserveRoom()">Забронювати</button>
+    
+    <!-- Повідомлення про бронювання -->
+    <div id="reservationResult"></div>
+</div>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
